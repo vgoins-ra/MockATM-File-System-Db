@@ -1,0 +1,35 @@
+[[package]]
+category = "main"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "1.15.0"
+
+[[package]]
+category = "main"
+description = "A library for runtime type checking and validation of python values"
+name = "validation"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "0.6.1"
+
+[package.dependencies]
+six = ">=1.10,<2"
+
+[package.extras]
+email = ["idna (>=2.0.0)"]
+test = ["pytz", "idna"]
+
+[metadata]
+content-hash = "69727dc8f14aef5405bfd72e7a42fcab2e3cd2c162e9ffa175ee95ac944a358f"
+python-versions = "^3.8"
+
+[metadata.files]
+six = [
+    {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},
+    {file = "six-1.15.0.tar.gz", hash = "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259"},
+]
+validation = [
+    {file = "validation-0.6.1.tar.gz", hash = "sha256:6c4de762666020e7a398d40f90b770d8ea76dbb98c990071000ea9b479c4ecfc"},
+]
